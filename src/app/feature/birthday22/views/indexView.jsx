@@ -12,7 +12,10 @@ class Birthday22IndexView extends Component {
           </div>
           <div className="content section1-content d-flex justify-content-center">
             <div className="images">
-              <img src={require("../../../core/images/1.jpeg")} alt="" />
+              <img src={require("../../../core/images/2.jpeg")} alt="" />
+              <img src={require("../../../core/images/4.jpeg")} alt="" />
+              <img src={require("../../../core/images/6.jpeg")} alt="" />
+              <img src={require("../../../core/images/7.jpeg")} alt="" />
             </div>
             <div className="custom-card">
               <div className="custom-card-bg">
