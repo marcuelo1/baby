@@ -1,0 +1,98 @@
+#birthday22 {
+  h1 {
+    font-size: 23px;
+  }
+
+  .section {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    background-color: rgba(0,0,0,0.1);
+
+    .background {
+      width: inherit;
+      height: 100vh;
+      overflow: hidden;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+
+      img {
+        width: inherit;
+        height: inherit;
+      }
+    }
+
+    .content {
+      padding: 20px;
+
+      .custom-card {
+        position: relative;
+
+        .custom-card-bg {
+          width: 100%;
+          height: 600px;
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: -1;
+          
+          .custom-card-bg-img {
+            width: inherit;
+            height: inherit;
+            object-fit: fill;
+          }
+        }
+      }
+
+      &.section1-content {
+        padding-top: 50px;
+        
+        .images {
+          width: 45%;
+          height: 100%;
+          overflow: hidden;
+
+          img {
+            width: 300px;
+            height: 500px;
+            object-fit: contain;
+          }
+        }
+
+        .custom-card {
+          width: 55%;
+          margin: 0 100px;
+
+          .custom-card-bg {
+            .flower {
+              width: 160px;
+              position: absolute;
+              top: -55px;
+              right: 25px;
+              transform: rotate(-35deg);
+            }
+          }
+
+          .custom-card-body {
+            padding: 70px;
+
+            h1 {
+              text-align: left;
+              margin-bottom: 50px;
+              font-weight: 900;
+            }
+
+            p {
+              text-align: left;
+              color: whitesmoke;
+              font-weight: bold;
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
