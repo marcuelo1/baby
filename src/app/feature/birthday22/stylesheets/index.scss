@@ -120,6 +120,8 @@
 
           .custom-card-body {
             padding: 70px;
+            position: relative;
+            z-index: 2;
 
             h2 {
               text-align: left;
@@ -131,6 +133,24 @@
               color: whitesmoke;
               font-weight: bold;
               font-size: 14px;
+
+              span {
+                color: navy;
+              }
+            }
+
+            .bouquete {
+              position: absolute;
+              top: 0;
+              left: -100vw;
+              background: rgba(0,0,0,0.7);
+              padding: 50px;
+              color: white;
+              transition: left 500ms ease-in-out;
+
+              &.active {
+                left: -50%;
+              }
             }
           }
         }

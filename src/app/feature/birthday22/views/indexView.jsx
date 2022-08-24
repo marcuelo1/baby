@@ -3,6 +3,15 @@ import '../stylesheets/index.scss';
 
 class Birthday22IndexView extends Component {
   state = {  } 
+
+  showBouquet = () => {
+    document.querySelector(".section1-content .bouquete").classList.add('active')
+  }
+
+  hideBouquet = () => {
+    document.querySelector(".section1-content .bouquete").classList.remove('active')
+  }
+
   render() { 
     return (
       <div className="page" id="birthday22">
@@ -25,7 +34,11 @@ class Birthday22IndexView extends Component {
               <div className="custom-card-body">
                 <h2>HAPPY BIRTHDAY <br /> TO MY GREATEST LOVE</h2>
                 <p>HAPPY 22ND BIRTHDAY BABY KOOO!!!! TIGULANG KANAAAA!!!! So it means pwede na ta makapakasal HAHAHAHAHAHA CHAR. Pero sa tuood2 baby thank you. Thank you for loving me, supporting me, caring me, TANAN2 THANKYOUU GD PALANGGA KOO!!! But the most important of all, thank you for appreciating me and for recognizing my worth. I know these past few days was tough for both of us. It made us fight and argue but I dont regret any of it because I know this will make us realize that fun and excitement isn't the only thing that bind us together, it is love and commitment. Even though we fight, I still know that everything will be okay because I know you will never leave my side. So thank you so much baby for putting up with me. I know that we dont hold the future, but I only know one thing for sure, <br /> <u>I WILL LOVE YOU FOR THE REST OF YOUR LIFE!</u></p>
-                <p>P.S. GWAPA2 GD SIMO LANGGA YA HUHUHU SABAD AH GAKA TUNAW NA KO SIMO MGA TULOK!!!</p>
+                <p>P.S. GWAPA2 GD SIMO LANGGA YA HUHUHU SABAD AH GAKA TUNAW NA KO SIMO MGA TULOK!!! AND FOR MY GIFT <span id='bouquete-span' onMouseEnter={this.showBouquet} onMouseOut={this.hideBouquet}>HOVER HERE</span></p>
+                <div className="bouquete">
+                  <h2>FLOWERS FOR YOU!! HEHEHEHHE</h2>
+                  <img src={require("../../../core/images/birthday22/bouquote.png")} alt="" />
+                </div>
               </div>
             </div>
           </div>
