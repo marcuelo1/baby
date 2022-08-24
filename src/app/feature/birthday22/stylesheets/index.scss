@@ -1,6 +1,7 @@
 #birthday22 {
-  h1 {
+  h2 {
     font-size: 23px;
+    font-weight: 900;
   }
 
   .section {
@@ -8,10 +9,11 @@
     min-height: 100vh;
     position: relative;
     background-color: rgba(0,0,0,0.1);
+    overflow: hidden;
 
     .background {
       width: inherit;
-      height: 100vh;
+      min-height: 100vh;
       overflow: hidden;
       position: absolute;
       top: 0;
@@ -20,12 +22,26 @@
 
       img {
         width: inherit;
-        height: inherit;
+      }
+
+      &.sec2-bg {
+        img {
+          height: 1200px;
+        }
       }
     }
 
     .content {
       padding: 20px;
+
+      h1.title {
+        width: 500px;
+        border-bottom: 3px solid black;
+        margin-bottom: 40px;
+
+        text-align: left;
+        font-weight: 900;
+      }
 
       .custom-card {
         position: relative;
@@ -105,10 +121,9 @@
           .custom-card-body {
             padding: 70px;
 
-            h1 {
+            h2 {
               text-align: left;
-              margin-bottom: 50px;
-              font-weight: 900;
+              margin-bottom: 40px;
             }
 
             p {
@@ -118,6 +133,100 @@
               font-size: 14px;
             }
           }
+        }
+      }
+
+      &.section2-content {
+        h1.title {
+          color: white;
+          border-color: white;
+        }
+
+        ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          width: 1260px;
+
+          li {
+            float: left;
+            margin: 0 10px;
+            margin-bottom: 50px;
+          }
+        }
+
+        .group {
+          width: 400px;
+          height: 300px;
+          border-radius: 10px;
+          overflow: hidden;
+          border: 1px solid rgba(255, 255, 255, 1);
+          position: relative;
+          z-index: 1;
+          color: white;
+
+          &:hover {
+            .overlay {
+              opacity: 1;
+            }
+
+            img {
+              transform: scale(1.1, 1.1);
+            }
+
+            h2 {
+              top: 15%;
+            }
+
+            p {
+              opacity: 1;
+            }
+          }
+
+          .overlay {
+            width: inherit;
+            height: inherit;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: rgba(0,0,0,0.7);
+            z-index: -1;
+            opacity: 0;
+            transition: opacity 500ms ease-in-out;
+          }
+
+          img {
+            width: inherit;
+            height: inherit;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -2;
+            transition: transform 500ms ease-in-out;
+          }
+          
+          h2 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80%;
+            transition: top 500ms ease-in-out;
+          }
+
+          p {
+            margin-top: 120px;
+            opacity: 0;
+            transition: opacity 500ms ease-in-out;
+          }
+        }
+      }
+
+      &.section3-content {
+        h1.title {
+          color: white;
+          border-color: white;
         }
       }
     }
