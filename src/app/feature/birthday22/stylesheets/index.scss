@@ -1,7 +1,19 @@
 #birthday22 {
+  position: relative;
+
   h2 {
     font-size: 23px;
     font-weight: 900;
+  }
+
+  .intro {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    background-color: #DDC0B4;
   }
 
   .section {
@@ -136,7 +148,7 @@
 
             p {
               text-align: left;
-              color: whitesmoke;
+              color: black;
               font-weight: bold;
               font-size: 14px;
 

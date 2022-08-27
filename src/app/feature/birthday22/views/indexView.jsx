@@ -40,6 +40,9 @@ class Birthday22IndexView extends Component {
   render() { 
     return (
       <div className="page" id="birthday22" onMouseOver={this.pageHover}>
+        {/* <div className="intro">
+
+        </div> */}
         <div className="section">
           <div className="background">
             <img src={require("../../../core/images/birthday22/crumpled-paper.jpg")} alt="" />
@@ -125,7 +128,7 @@ class Birthday22IndexView extends Component {
                   <h2 data-journeysubcard>ZXCASDASSAD!!!</h2>
                 </div>
                 <div className="group-content">
-                  <p>Kung ano dra ang title, KAY AMO GD NA REACTION KO SANG GIN SENDAN MO KO NA HAHAHA </p>
+                  <p>Kung ano dra ang title, KAY AMO GD NA REACTION KO SANG GIN SENDAN MO KO NA HAHAHA this is the first time that someone made a tiktok video about me 🥰🥰🥰 I WAS LITERALLY SUPER HAPPY WHEN I SAW THIS!!! But at the same time I felt scared, because you were recording me without my permission. I felt I'm being harassed HAHAHA CHAR HAHAHA PERO THE BEST KA GD LANGGA YAA!!!! Bisan nd ikaw ang first ko langga nga gf KAY SIMO KO MAN GYAPON FIRST NA EXPERIENCE ANG AMO NI ❤️ Grabe gd kilig2 ko diri HAHAHA ILOVEYOUSOOMUCHHH BABY KOOO!!!!</p>
                 </div>
               </li>
               <li>
@@ -135,10 +138,10 @@ class Birthday22IndexView extends Component {
                   Your browser does not support HTML video.
                 </video>
                   <div className="overlay" data-journeysubcard></div>
-                  <h2 data-journeysubcard>The Moment I know that You dont want to Lose ME</h2>
+                  <h2 data-journeysubcard>The Moment I knew that You dont want to Lose ME</h2>
                 </div>
                 <div className="group-content">
-                  <p>At that day when we had breakfast together (nga ikaw gd nag hmbal mapa aga gd ta, para ma solo moko HAHAHA), I didnt know what I felt but IT WAS THE MOST AMAZING FEELING IN THE WORLD! Ara bla nga daw ga date ta pero nga daw nd kay wla man ta ya nag confess sa isa kag isa. The small things you did like holding my phone and wallet, giving me alcohol, it was like we are a couple HAHAHA bisan sang ara na ta tippys you were still taking care of me and we held hands secretly HAHAHAH pero wla na ko tuh labot kung makita nila. Maybe because of those, I felt an overwhelming feeling plus gin amplify pa na ka ILIMNUN NATUN hahaha so later that night I was just looking at you dancing, laughing, and enjoying and I think to myself "Wow, she's so amazing, beautiful and so free" and at the moment I didn't know I fell to you really really hard until I said "I Love You". And boom patay nako diritso na ko tulog HAHAHHA</p>
+                  <p>Sa diri ya palangga, kay</p>
                 </div>
               </li>
               <li>
@@ -148,7 +151,7 @@ class Birthday22IndexView extends Component {
                   <h2 data-journeysubcard>FINALLY! IT'S OFFICIAL!</h2>
                 </div>
                 <div className="group-content">
-                  <p>At that day when we had breakfast together (nga ikaw gd nag hmbal mapa aga gd ta, para ma solo moko HAHAHA), I didnt know what I felt but IT WAS THE MOST AMAZING FEELING IN THE WORLD! Ara bla nga daw ga date ta pero nga daw nd kay wla man ta ya nag confess sa isa kag isa. The small things you did like holding my phone and wallet, giving me alcohol, it was like we are a couple HAHAHA bisan sang ara na ta tippys you were still taking care of me and we held hands secretly HAHAHAH pero wla na ko tuh labot kung makita nila. Maybe because of those, I felt an overwhelming feeling plus gin amplify pa na ka ILIMNUN NATUN hahaha so later that night I was just looking at you dancing, laughing, and enjoying and I think to myself "Wow, she's so amazing, beautiful and so free" and at the moment I didn't know I fell to you really really hard until I said "I Love You". And boom patay nako diritso na ko tulog HAHAHHA</p>
+                  <p></p>
                 </div>
               </li>
               <li>
@@ -161,7 +164,7 @@ class Birthday22IndexView extends Component {
                   <h2 data-journeysubcard>1ST MONTHSARY!!!</h2>
                 </div>
                 <div className="group-content">
-                  <p>At that day when we had breakfast together (nga ikaw gd nag hmbal mapa aga gd ta, para ma solo moko HAHAHA), I didnt know what I felt but IT WAS THE MOST AMAZING FEELING IN THE WORLD! Ara bla nga daw ga date ta pero nga daw nd kay wla man ta ya nag confess sa isa kag isa. The small things you did like holding my phone and wallet, giving me alcohol, it was like we are a couple HAHAHA bisan sang ara na ta tippys you were still taking care of me and we held hands secretly HAHAHAH pero wla na ko tuh labot kung makita nila. Maybe because of those, I felt an overwhelming feeling plus gin amplify pa na ka ILIMNUN NATUN hahaha so later that night I was just looking at you dancing, laughing, and enjoying and I think to myself "Wow, she's so amazing, beautiful and so free" and at the moment I didn't know I fell to you really really hard until I said "I Love You". And boom patay nako diritso na ko tulog HAHAHHA</p>
+                  <p></p>
                 </div>
               </li>
               <li>
