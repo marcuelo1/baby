@@ -9,7 +9,7 @@
     min-height: 100vh;
     position: relative;
     background-color: rgba(0,0,0,0.1);
-    overflow: hidden;
+    // overflow: hidden;
 
     .background {
       width: inherit;
@@ -27,6 +27,12 @@
       &.sec2-bg {
         img {
           height: 1200px;
+        }
+      }
+
+      &.sec3-bg {
+        img {
+          height: 100vh;
         }
       }
     }
@@ -166,25 +172,35 @@
           list-style-type: none;
           margin: 0;
           padding: 0;
-          overflow: hidden;
+          // overflow: hidden;
           width: 1260px;
+          height: 1069px;
 
           li {
             float: left;
             margin: 0 10px;
             margin-bottom: 50px;
+            position: relative;
+
+            &:nth-child(3n+3) {  
+              .group-content {
+                left: -390px !important;
+                border-radius: 10px 0 10px 10px;
+                box-shadow: -5px 5px 20px #000000 !important;
+              }
+            }
           }
         }
 
         .group {
           width: 400px;
           height: 300px;
-          border-radius: 10px;
           overflow: hidden;
-          border: 1px solid rgba(255, 255, 255, 1);
           position: relative;
           z-index: 1;
           color: white;
+          border-radius: 10px;
+          border: 1px solid rgba(255, 255, 255, 1);
 
           &:hover {
             .overlay {
@@ -193,14 +209,6 @@
 
             img {
               transform: scale(1.1, 1.1);
-            }
-
-            h2 {
-              top: 15%;
-            }
-
-            p {
-              opacity: 1;
             }
           }
 
@@ -234,11 +242,31 @@
             width: 80%;
             transition: top 500ms ease-in-out;
           }
+        }
+
+        .group-content {
+          width: 400px;
+          position: absolute;
+          top: 0;
+          left: 390px;
+          z-index: -5;
+          background: #DDC0B4;
+          opacity: 0;
+          transition: opacity 500ms ease-in-out;
+          padding: 10px;
+          border-radius: 0 10px 10px 10px;
+          font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+          box-shadow: 5px 5px 20px #000000;
+
+          &.active {
+            opacity: 1;
+            z-index: 3;
+          }
 
           p {
-            margin-top: 120px;
-            opacity: 0;
-            transition: opacity 500ms ease-in-out;
+            text-align: left;
+            font-size: 14px;
+            line-height: 25px;
           }
         }
       }
@@ -247,6 +275,64 @@
         h1.title {
           color: white;
           border-color: white;
+        }
+
+        .carousel-indicators, .carousel-control-prev, .carousel-control-next {
+          display: none;
+        }
+
+        .carousel-item {
+          transition: opacity 1s ease-in-out !important;
+        }
+
+        .carousel-inner {
+          overflow: visible;
+        }
+
+        .card {
+          width: 280px;
+          height: 450px;
+          box-shadow: 5px 5px 20px #000000;
+
+          &.r-20 {
+            transform: rotate(20deg);
+          }
+
+          &.r-n20 {
+            transform: rotate(-20deg);
+          }
+
+          &.ml-20 {
+            margin-left: 20vw;
+          }
+
+          &.ml-50 {
+            margin-left: 50vw;
+          }
+
+          &.m-auto {
+            margin: 20px auto;
+          }
+
+          &.mt-20 {
+            margin-top: 20vh;
+          }
+
+          &.horizontal {
+            width: 450px !important;
+            height: 250px !important;
+          }
+
+          .card-body {
+            width: 100%;
+            height: 100%;
+
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: contain;
+            }
+          }
         }
       }
     }
